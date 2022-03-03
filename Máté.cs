@@ -17,6 +17,7 @@ namespace LogoKaresz
             if (irany == -1)
             {
                 Tollat(le);
+                Tollszín(ivszin);
                 Előre(meret * 0.9);
                 Balra(45);
                 Bezier(meret/ 3.5, 45, -meret/ 3.5, -45, meret);
@@ -43,6 +44,7 @@ namespace LogoKaresz
 
                 Jobbra(90);
                 Tollat(fel);
+                Tollszín(pontszin);
                 Előre(meret / 5);
                 Tölt(pontszin);
                 Hátra(meret / 5);
@@ -51,10 +53,12 @@ namespace LogoKaresz
                 Jobbra(90);
                 Előre(meret * 0.85);
                 Balra(90);
+                Tollszín(Color.Black);
             }
             if (irany == 1)
             {
                 Tollat(le);
+                Tollszín(ivszin);
                 Előre(meret * 0.9);
                 Jobbra(45);
                 Bezier(meret / 3.5, -45, -meret / 3.5, 45, meret);
@@ -81,6 +85,7 @@ namespace LogoKaresz
                 
                 Jobbra(90);
                 Tollat(fel);
+                Tollszín(pontszin);
                 Előre(meret / 5);
                 Tölt(pontszin);
                 Hátra(meret / 5);
@@ -89,6 +94,7 @@ namespace LogoKaresz
                 Balra(90);
                 Előre((meret * 0.85) - (meret / 5 * 2));
                 Jobbra(90);
+                Tollszín(Color.Black);
             }
         }
     }
