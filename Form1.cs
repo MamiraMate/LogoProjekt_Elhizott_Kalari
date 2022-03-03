@@ -16,6 +16,10 @@ namespace LogoKaresz
 			/* Ezt indítja a START gomb! */
 			// Teleport(közép.X, közép.Y+150, észak);
 
+
+
+
+
 			/// lehetséges feladatok
 
 			/*
@@ -31,6 +35,8 @@ namespace LogoKaresz
 			 * alul lévő zöld-fehér elnyújtott virág:
 			 * alul lévő fehér magas virág:
 			*/
+
+			
 		}
 	}
 }
