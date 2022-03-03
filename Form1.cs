@@ -16,7 +16,8 @@ namespace LogoKaresz
 			/* Ezt indítja a START gomb! */
 			// Teleport(közép.X, közép.Y+150, észak);
 
-			szele(-1, 100, Color.White, Color.Yellow);
+			szele(1, 100, Color.White, Color.DarkOrange); // 1 jobbra, -1 balra
+			szele(-1, 100, Color.White, Color.DarkOrange);
 
 
 
@@ -36,7 +37,7 @@ namespace LogoKaresz
 			 * alul lévő fehér magas virág:
 			*/
 
-			
+
 		}
 	}
 }
