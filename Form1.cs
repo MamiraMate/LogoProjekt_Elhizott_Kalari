@@ -28,7 +28,7 @@ namespace LogoKaresz
 			 * középen lévő hal feje:
 			 * középen lévő hal teste:
 			 * alul lévő zöld-fehér kerek virág:
-			 * alul lévő zöld-fehér elnyújtott virág:
+			 * alul lévő zöld-fehér elnyújtott virág: Máté
 			 * alul lévő fehér magas virág:
 			*/
 		}
