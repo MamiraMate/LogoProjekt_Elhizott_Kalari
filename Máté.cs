@@ -12,6 +12,66 @@ namespace LogoKaresz
 {
     public partial class Form1
     {
+        void elnyujtott_virag (double meret, Color belsoszin, Color kulsoszin)
+        {
+            Jobbra(90);
+            Tollat(fel);
+            Tollszín(kulsoszin);
+            Előre(meret / 6);
+            Balra(90);
+            Tollat(le);
+            Bezier(meret / 4, 0, -meret / 4, 90, (meret / 6) * 4);
+            Jobbra(180);
+            Bezier(meret / 4, 0, meret / 4, 90, (meret / 6) * 4);
+            Balra(90);
+            Tollat(fel);
+            Előre(meret / 6);
+            Balra(90);
+            Tollat(le);
+            Tollszín(belsoszin);
+            Bezier(meret / 8, 0, -meret / 8, 90, (meret / 6) * 2);
+            Jobbra(180);
+            Bezier(meret / 8, 0, meret / 8, 90, (meret / 6) * 2);
+            Tollat(fel);
+            Tollszín(kulsoszin);
+            Jobbra(90);
+            Előre((meret / 6) * 2);
+            
+            Balra(107);
+            Előre(meret / 5);
+            Jobbra(107);
+            Tollat(le);
+            Bezier(meret / 3, 270, -meret / 3, 90, (meret / 6) * 2.3);
+            Jobbra(153);
+            Bezier(meret / 3, 333, -meret / 3, 85, (meret / 6) * 1.8);
+            Jobbra(54);
+            Bezier(meret / 3, 0, -meret / 3, 90, (meret / 6) * 2.2);
+            Jobbra(26);
+            Bezier(meret / 3, 28, -meret / 3, 95, (meret / 6) * 1.8);
+            Jobbra(36);
+            Bezier(meret / 3, 270, meret / 3, 90, (meret / 6) * 2.3);
+
+            Jobbra(153);
+            Bezier(meret / 3, 333, meret / 3, 85, (meret / 6) * 1.8);
+            Jobbra(54);
+            Bezier(meret / 3, 0, meret / 3, 90, (meret / 6) * 2.2);
+            Jobbra(26);
+            Bezier(meret / 3, 28, meret / 3, 95, (meret / 6) * 1.8);
+            Jobbra(36);
+            Tollat(fel);
+            Jobbra(90);
+            Előre(meret / 5.235);
+            Balra(90);
+            Előre(meret / 17.05);
+            Jobbra(180);
+            Tölt(kulsoszin);
+            Előre(meret / 2);
+            Tölt(belsoszin);
+            Hátra(meret / 2);
+            Balra(90);
+            Tollat(le);
+
+        }
         void szele (int irany, double meret, Color pontszin, Color ivszin)
         {
             if (irany == -1)

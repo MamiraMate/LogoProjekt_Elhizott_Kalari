@@ -14,10 +14,10 @@ namespace LogoKaresz
 		void FELADAT()
 		{
 			/* Ezt indítja a START gomb! */
-			// Teleport(közép.X, közép.Y+150, észak);
+			Teleport(közép.X, közép.Y+50, észak);
 
-			szele(1, 100, Color.White, Color.DarkOrange); // 1 jobbra, -1 balra
-			szele(-1, 100, Color.White, Color.DarkOrange);
+			elnyujtott_virag(50, Color.Yellow, Color.DarkGreen);
+			// szele(1, 100, Color.White, Color.DarkOrange); // 1 jobbra, -1 balra
 
 
 
@@ -26,14 +26,14 @@ namespace LogoKaresz
 			/*
 			 * széle: Máté
 			 * tetején lévő madár: 
-			 * várnak a torony része (amelyik kilóg a téglalapból):
+			 * várnak a torony része (amelyik kilóg a téglalapból): Gréta kész
 			 * felül lévő virág a vár mellett:
 			 * vár ajtaja: 
 			 * középen lévő cik-cak:
 			 * középen lévő hal feje:
 			 * középen lévő hal teste:
 			 * alul lévő zöld-fehér kerek virág:
-			 * alul lévő zöld-fehér elnyújtott virág:
+			 * alul lévő zöld-fehér elnyújtott virág: Máté kész
 			 * alul lévő fehér magas virág:
 			*/
 
