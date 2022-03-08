@@ -21,7 +21,7 @@ namespace LogoKaresz
 			/*
 			 * széle: Máté kész
 			 * tetején lévő madár: 
-			 * várnak a torony része (amelyik kilóg a téglalapból): Géta kész
+			 * várnak a torony része (amelyik kilóg a téglalapból): Gréta kész
 			 * felül lévő virág a vár mellett:
 			 * vár ajtaja: 
 			 * középen lévő cik-cak:
