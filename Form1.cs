@@ -14,11 +14,11 @@ namespace LogoKaresz
 		void FELADAT()
 		{
 			/* Ezt indítja a START gomb! */
-			Teleport(közép.X, közép.Y+50, észak);
+			Teleport(közép.X, közép.Y-100, észak);
 
 			// elnyujtott_virag(50, Color.Yellow, Color.DarkGreen);
-			szele(-1, 20, Color.White, Color.DarkOrange); // 1 jobbra, -1 balra
-
+			// szele(-1, 20, Color.White, Color.DarkOrange); // 1 jobbra, -1 balra
+			cik_cak_szelet(300, Color.Green, Color.Red);
 
 
 			/// lehetséges feladatok
