@@ -12,47 +12,20 @@ namespace LogoKaresz
 {
     public partial class Form1
     {
+        void cik_cak (double meret, Color kintszin, Color bentszin)
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                Tollat(le);
+                cik_cak_szelet(meret / 4, kintszin, bentszin);
+                Tollat(fel);
+                Jobbra(90);
+                Előre(meret / 4);
+                Balra(90);
+            }
+        }
         void cik_cak_szelet (double meret, Color kintszin, Color bentszin)
         {
-            /*
-            for (int i = 0; i < 2; i++)
-            {
-                //  segédvonal
-                Jobbra(180);
-                Tollat(le);
-                //Előre(meret * 0.14333);
-                //Hátra(meret * 0.14333);
-                Előre(meret);
-                Hátra(meret);
-                Balra(180);
-                //  segédvonal vége
-                Tollat(le);
-                Tollszín(bentszin);
-                Jobbra(90);
-                Előre(meret * 0.15);
-                Tollszín(kintszin);
-                Előre(meret * 0.35);
-                //  segédvonal
-                Jobbra(90);
-                //Előre(meret * 0.14333);
-                //Hátra(meret * 0.14333);
-                Előre(meret / 2);
-                Hátra(meret / 2);
-                Balra(90);
-                //  segédvonal vége
-                Előre(meret * 0.35);
-                Tollszín(bentszin);
-                Előre(meret * 0.15);
-
-                Jobbra(90);
-                Előre((meret * 0.15) / 2);
-                Tollat(fel);
-                Előre(meret * 0.7);
-                Előre(meret * 0.15);
-                Tollat(le);
-                Előre((meret * 0.15) / 2);
-            }
-            */
             Tollszín(bentszin);
             Jobbra(90);
             Előre(meret * 0.15);
