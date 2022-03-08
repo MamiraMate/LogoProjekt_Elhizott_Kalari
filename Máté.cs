@@ -12,6 +12,11 @@ namespace LogoKaresz
 {
     public partial class Form1
     {
+        void cik_cak_szelet (int irany, double meret)
+        {
+
+        }
+
         void elnyujtott_virag (double meret, Color belsoszin, Color kulsoszin)
         {
             Jobbra(90);
@@ -95,7 +100,7 @@ namespace LogoKaresz
                 Jobbra(120);
                 Hátra(meret * .9);
 
-                Tollszín(Color.Black);
+                Tollszín(pontszin);
                 Balra(90);
                 Előre(meret * 0.85);
                 Jobbra(90);
@@ -136,7 +141,7 @@ namespace LogoKaresz
                 Balra(120);
                 Hátra(meret * .9);
                 
-                Tollszín(Color.Black);
+                Tollszín(pontszin);
                 Jobbra(90);
                 Előre((meret * 0.85) - (meret / 5 * 2));
                 Balra(90);
