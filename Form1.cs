@@ -24,7 +24,7 @@ namespace LogoKaresz
 			 * várnak a torony része (amelyik kilóg a téglalapból): Gréta kész
 			 * felül lévő virág a vár mellett:
 			 * vár ajtaja: 
-			 * középen lévő cik-cak: Máté
+			 * középen lévő cik-cak: Máté kész
 			 * középen lévő hal feje:
 			 * középen lévő hal teste:
 			 * alul lévő zöld-fehér kerek virág:
