@@ -95,6 +95,7 @@ namespace LogoKaresz
                 Jobbra(120);
                 Hátra(meret * .9);
 
+                Tollszín(Color.Black);
                 Balra(90);
                 Előre(meret * 0.85);
                 Jobbra(90);
@@ -104,7 +105,6 @@ namespace LogoKaresz
 
                 Jobbra(90);
                 Tollat(fel);
-                Tollszín(pontszin);
                 Előre(meret / 5);
                 Tölt(pontszin);
                 Hátra(meret / 5);
@@ -136,6 +136,7 @@ namespace LogoKaresz
                 Balra(120);
                 Hátra(meret * .9);
                 
+                Tollszín(Color.Black);
                 Jobbra(90);
                 Előre((meret * 0.85) - (meret / 5 * 2));
                 Balra(90);
@@ -145,7 +146,6 @@ namespace LogoKaresz
                 
                 Jobbra(90);
                 Tollat(fel);
-                Tollszín(pontszin);
                 Előre(meret / 5);
                 Tölt(pontszin);
                 Hátra(meret / 5);

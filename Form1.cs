@@ -16,8 +16,8 @@ namespace LogoKaresz
 			/* Ezt indítja a START gomb! */
 			Teleport(közép.X, közép.Y+50, észak);
 
-			elnyujtott_virag(50, Color.Yellow, Color.DarkGreen);
-			// szele(1, 100, Color.White, Color.DarkOrange); // 1 jobbra, -1 balra
+			// elnyujtott_virag(50, Color.Yellow, Color.DarkGreen);
+			szele(-1, 20, Color.White, Color.DarkOrange); // 1 jobbra, -1 balra
 
 
 
