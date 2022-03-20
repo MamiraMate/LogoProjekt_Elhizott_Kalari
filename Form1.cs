@@ -7,6 +7,126 @@ namespace LogoKaresz
 {
 	public partial class Form1 : Form
 	{
+        void cik_cak(double meret, Color kintszin, Color bentszin)
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                Tollat(le);
+                cik_cak_szelet(meret / 4, kintszin, bentszin);
+                Tollat(fel);
+                Jobbra(90);
+                Előre(meret / 4);
+                Balra(90);
+            }
+        }
+        void cik_cak_szelet(double meret, Color kintszin, Color bentszin)
+        {
+            Tollszín(bentszin);
+            Jobbra(90);
+            Előre(meret * 0.15);
+            Jobbra(22.5);
+            Előre(meret / 2.65);
+            Balra(45);
+            Előre(meret / 2.65);
+            Jobbra(22.5);
+            Előre(meret * 0.15);
+            Jobbra(90);
+            Előre((meret * 0.15) / 2);
+            Jobbra(90 - 22.5);
+            Előre(meret / 1.853);
+            Jobbra(45);
+            Előre(meret / 1.853);
+
+
+            Balra(112.5);
+            Hátra((meret * 0.15) / 2);
+            Előre((meret * 0.15) / 2);
+            Tollat(fel);
+            Balra(90);
+            Előre(meret / 10);
+            Tölt(bentszin);
+            Hátra(meret / 10);
+            Jobbra(90);
+            Előre(meret * 0.7);
+            Előre(meret * 0.15);
+            Balra(90);
+            Előre(meret / 2);
+            Balra(90);
+            Balra(90 - 22.5);
+            Tollat(le);
+
+            Előre(meret / 1.853);
+            Balra(112.5);
+            Előre(meret * 0.133333);
+            Balra(90 - 22.5);
+            Előre(meret / 2.65);
+            Balra(22.5);
+            Előre(meret * 0.3);
+            Balra(22.5);
+            Előre(meret / 2.65);
+            Balra(90 - 22.5);
+            Előre(meret * 0.133333);
+            Balra(112.5);
+            Előre(meret / 1.853);
+            Tollat(fel);
+            Előre(meret / 10);
+            Tölt(bentszin);
+            Hátra(meret / 10);
+
+
+            Tollszín(kintszin);
+            Jobbra(45);
+            Előre(meret / 1.853);
+            Balra(112.5);
+            Előre(meret * 0.133333);
+            Tollat(le);
+            Előre(meret * 0.148);
+            Balra(90);
+            Előre((meret / 2) - (meret * 0.15));
+            Tollat(fel);
+            Hátra(meret * 0.2);
+            Balra(90);
+            Előre(meret / 15);
+            Tölt(kintszin);
+            Hátra(meret / 15);
+            Jobbra(90);
+            Előre(meret * 0.2);
+            Előre(meret * 0.3);
+            Tollat(le);
+            Előre((meret / 2) - (meret * 0.15));
+            Balra(90);
+            Előre(meret * 0.148);
+            Tollat(fel);
+            Hátra(meret * 0.07);
+            Balra(90);
+            Előre(meret / 15);
+            Tölt(kintszin);
+            Hátra(meret / 15);
+            Jobbra(90);
+            Előre(meret * 0.07);
+            Tollat(fel);
+            Előre(meret * 0.133333);
+            Előre(meret * 0.72);
+            Balra(90);
+
+
+            Előre(meret);
+            Jobbra(180);
+            Előre(meret * 0.15);
+            Tollat(le);
+            Előre(meret * 0.7);
+            Tollat(fel);
+            Hátra(meret * 0.35);
+            Jobbra(90);
+            Előre(meret / 15);
+            Tölt(kintszin);
+            Hátra(meret / 15);
+            Balra(90);
+            Hátra(meret * 0.5);
+
+            Balra(90);
+
+        }
         void szele(int irany, double meret, Color pontszin, Color ivszin)
         {
             if (irany == -1)
@@ -153,7 +273,12 @@ namespace LogoKaresz
                 Jobbra(90);
                 szele(-1, meret / 16, Color.White, Color.Orange);
             }
-            
+            Balra(90);
+            Tollat(fel);
+            Előre(meret / 16);
+            Jobbra(90);
+            Előre((meret / 16) * 10);
+            cik_cak(meret * 0.869, Color.Green, Color.White);
         }
 
 
@@ -177,8 +302,9 @@ namespace LogoKaresz
 			 * alul lévő zöld-fehér elnyújtott virág: Máté kész
 			 * alul lévő fehér magas virág:
 			*/
-
-            projekt(300);
+            using (new Frissítés(false))
+                projekt(300);
+            
 		}
 	}
 }
